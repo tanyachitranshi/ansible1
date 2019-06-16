@@ -7,9 +7,5 @@
       apt: 
         name: nginx
         state: present
-    - name: copying nginx config
-      copy:
-        src: /home/ubuntu/
-        dest: /etc/nginx/sites-available/default
-        mode: '0755'
+    
     
