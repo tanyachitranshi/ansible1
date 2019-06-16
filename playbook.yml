@@ -9,7 +9,7 @@
       state: present
     - name: copying nginx config
       copy:
-        src: /home/ubuntu/default
+        src: /home/ubuntu/index
         dest: /etc/nginx/sites-available/default
         mode: '0755'
     
