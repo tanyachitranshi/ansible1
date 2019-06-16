@@ -1,7 +1,7 @@
 ---
 
 - name: Install nginx
-  hosts: all
+  hosts: localhost
   tasks:
  
     - name: Install nginx
@@ -12,4 +12,4 @@
     - name: Start Service
       apt: 
       name: nginx
-      service: started
+      service: restart
