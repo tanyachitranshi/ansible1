@@ -10,9 +10,6 @@
     - name: copying nginx config
       copy:
         src: /home/ubuntu/default
-        dest: /etc/nginx/sites-available/default    
-    - name: Start Service
-      apt: 
-      name: nginx
-      service: restarted
-      enabled: yes
+        dest: /etc/nginx/sites-available/default
+        mode: '0755'
+    
